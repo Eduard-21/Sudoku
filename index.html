@@ -1,14 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sudoku</title>
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <script src="script.js"></script>
+    <header>
+        <img class="logo" src="./img/logo-fina.png" alt="Logo here">
+    </header>
+
+    <div class="container">
+
+        <!-- MAIN PAGE -->
+        <div class="main-page">
+            <div class="first">
+                <div class="best-score">
+                    <div class="text-box">
+                        <h1>Best Score</h1>
+                    </div>
+                    <div class="list">
+                        <div>
+                            <p class="score">--</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second">
+                <button class="button-start">Start</button>
+            </div>
+        </div>
+
+        <!-- LEVEL PAGE -->
+        <div class="level-page">
+            <h2>Select Difficulty Level</h2>
+
+            <div class="level1">
+                <button class="button-level" id="level-easy">Easy</button>
+            </div>
+            <div class="level2">
+                <button class="button-level" id="level-medium">Medium</button>
+            </div>
+            <div class="level3">
+                <button class="button-level" id="level-hard">Hard</button>
+            </div>
+        </div>
+
+        <!-- GAME PAGE -->
+        <div class="game-container">
+            <div class="line">
+                <div class="score">Score :</div>
+                <div class="timer">00:00</div>
+            </div>
+            <div class="game-page">
+                <div class="sudoku-grid"></div>
+
+                <div class="controls">
+                    <button class="button-game">
+                        <img class="icon" src="img/pause-circle-svgrepo-com.svg" alt="not found">
+                    </button>
+                    <button class="button-game">
+                        <img class="icon" src="img/eraser-svgrepo-com.svg" alt="not found">
+                    </button>
+                    <button class="button-game">
+                        <img class="icon" src="img/pen-svgrepo-com.svg" alt="not found">
+                    </button>
+                    <button class="button-game">
+                        <img class="icon" src="img/refresh-svgrepo-com.svg" alt="not found">
+                    </button>
+                </div>
+            </div>
+        </div>
+            
+
+        <!-- LAST PAGE -->
+        <div class="last-page">
+                <p class="title">Finish</p>
+            <div class="result-message">
+                <p>Your Score: <span class="final-score">36:40</span></p>
+                <p>Your Score: <span class="final-score">53 459</span></p>
+            </div>
+            <button class="button-restart">Restart</button>
+        </div>
+
+    </div>
+
+    <script src="function.js"></script>
 </body>
 </html>
