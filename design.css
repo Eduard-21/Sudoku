@@ -281,6 +281,12 @@ p {
     color: #32373D;
 }
 
+.list-score {
+    color: #CCD4DA;
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .timer {
     color: #FF4602;
 }
